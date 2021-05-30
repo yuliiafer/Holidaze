@@ -1,0 +1,116 @@
+.wrapper {
+    width: 100%;
+    background-color: #f1f1f1;
+    margin-bottom: 60px;
+  }
+  
+  .container {
+    position: relative;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+  }
+  
+  .content {
+    width: 50%;
+    padding: 110px 40px 65px;
+    line-height: 1.4;
+    .subtitle {
+      font-size: 22px;
+      text-transform: uppercase;
+      font-family: "Proxima Nova Light", sans-serif;
+    }
+    .title {
+      font-family: "Proxima Nova Black", sans-serif;
+      font-size: 40px;
+      line-height: 1.5;
+      padding: 1rem 0;
+    }
+    :global(.text) {
+      margin-bottom: 10px;
+      text-align: justify;
+    }
+  }
+  
+  .imageWrapper {
+    position: relative;
+    align-items: center;
+    width: 50%;
+    padding: 90px 20px 90px 50px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    .img {
+      width: 100%;
+      position: relative;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 5px;
+      background: #f1f1f1;
+      box-shadow: inset 9px -9px 25px #b2b2b2,
+                  inset -9px 9px 25px #ffffff;
+                  filter:blur(.2px);
+                  transform: scale(0.95);
+                  &:hover {
+                    filter:blur(0);
+                  transform: scale(1);
+                  }
+    }
+  }
+  
+  .starImg {
+    position: absolute;
+    top: -85px;
+    left: -80px;
+
+    img {
+      object-fit: contain;
+
+
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .title {
+ 
+      font-size: 20px !important;
+    }
+    .imageWrapper {
+      padding: 90px 20px 90px 0;
+    }
+  }
+  @media (max-width: 1400px) {
+    .starImg {
+      
+      top: -105px;
+      left: 0px;
+  }
+}
+  @media (max-width: 700px) {
+    .container {
+      flex-wrap: wrap;
+    }
+  
+    .content, .imageWrapper {
+      width: 100%;
+    }
+  
+    .content {
+      padding: 80px 20px 20px;
+  
+      .title {
+        font-size: 32px;
+        padding: 2rem 0;
+      }
+    }
+  
+    .imageWrapper {
+      padding: 0;
+      .img {
+        height: 200px;
+        border: none;
+        border-radius: 0;
+  
+      }
+    }
+  }

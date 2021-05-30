@@ -1,0 +1,153 @@
+.cardWrapper {
+    width: 223px;
+    height: 421px;
+    margin: 0 0 0 20px;
+  }
+  
+  .card {
+    width: 100%;
+    height: 331px;
+    position: relative;
+    transition: all 300ms ease-out;
+    overflow: visible;
+  
+    &:before {
+      position: absolute;
+      content: '';
+      background: #007261;
+      top:0;
+      left:0;
+      width: 100%;
+      height: 20px;
+      opacity: 0;
+      z-index: 100;
+      border-radius: 5px 5px 0 0;
+      transition: all 500ms;
+    }
+    &.lifted {
+      position: relative;
+      margin-top: -90px;
+      height: 421px;
+      transition: all 500ms;
+  
+      &:before {
+        opacity: 1;
+      }
+  
+      &.noLink {
+        margin-top: -60px;
+        height: 402px;
+        &.small {
+          margin-top: -48px;
+          height: 390px;
+        }
+      }
+    }
+  }
+  
+  .card .cashbackIcon {
+    position: absolute;
+    top: -15px;
+    right: -10px;
+    margin: 0 !important;
+    width: 70px !important;
+    filter: drop-shadow(5px 3px 4px rgba(34, 60, 80, 0.5));
+  }
+  
+  .card .img {
+    height: 331px;
+    object-fit: cover;
+    box-shadow: -6.156px 16.914px 17px 0px rgba(23, 23, 23, 0.05)
+  
+  }
+  
+  @media screen and (max-width: 1200px){
+    .card, .card.lifted {
+      position: relative;
+      margin-top: 0;
+      height: 421px;
+      transition: all 500ms;
+      &.noLink {
+        height: 402px;
+        margin-top: 0;
+      }
+    }
+    .card .content a, .card.lifted .content a {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 480px){
+    .card:before {
+      content: none;
+    }
+    .cardWrapper {
+      width: 65vw;
+    }
+    .card .img {
+      height: calc(65vw * 1.48);
+      object-fit: cover;
+    }
+    .card, .card.lifted, .cardWrapper {
+      height: calc(65vw * 1.48 + 85px);
+      &.noLink {
+        height: calc(65vw * 1.48 + 75px);
+      }
+      &.small {
+        height: calc(65vw * 1.48 + 65px);
+  
+      }
+    }
+  }
+  
+  .card .img {
+    border-radius: 5px;
+  }
+  
+  .content {
+    color: #171717;
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: 0px;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1;
+  }
+  .card.smallText .title {
+    font-size: 15.7px;
+  }
+  
+  .title {
+    text-transform: uppercase;
+    font-family: "Proxima Nova Black", sans-serif;
+    font-size: 18.6px;
+    margin-bottom: 8px;
+    margin-top: 5px;
+    white-space: nowrap;
+  }
+  
+  .title + div {
+    text-transform: none;
+    font-size: 13px;
+    color: #868686;
+    font-family: "Proxima Nova Regular", sans-serif;
+  }
+  
+  .subtitle {
+    text-transform: uppercase;
+    font-family: "Proxima Nova Regular", sans-serif;
+    font-size: 12.3px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+  
+  .subtitle:after {
+    display: block;
+    background-color: #a0fff1;
+    content: "";
+    width: 15px;
+    height: 4px;
+    position: absolute;
+    top: -11px
+  }

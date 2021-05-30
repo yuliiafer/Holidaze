@@ -1,0 +1,19 @@
+.search input {
+    width: 350px;
+    height: 55px;
+    padding: 10px;
+    margin-top: 2rem;
+    border: 1px #777 solid;
+    border-radius: 5px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 100%;
+    max-height: 100px;
+    height: 100%;
+    border-radius: 5px;
+    border: none;
+    background: #ffffff;
+    box-shadow: inset 4px -4px 9px #dedede,
+    inset -4px 4px 9px #ffffff;
+  }

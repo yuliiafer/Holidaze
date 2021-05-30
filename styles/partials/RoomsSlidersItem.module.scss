@@ -1,0 +1,203 @@
+.wrapper {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 170px;
+    overflow: hidden;
+    margin-bottom: -23px;
+  
+    :global(.slick-next:before,
+    .slick-prev:before) {
+      color: #000;
+    }
+  
+    :global(.slick-list) {
+      transition: all 0.3s;
+      overflow: visible;
+    }
+  
+    :global(.slick-dots ){
+      bottom: -32px;
+    }
+    :global(.slick-dots li) {
+      margin: 0
+    }
+  
+    :global(.slick-slide img) {
+      width: 100%;
+      margin: 0 40px 0 0;
+    }
+  
+    :global(.slick-track) {
+      margin: 0 auto;
+    }
+  }
+  
+  .container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  @media screen and (max-width: 480px){
+    .wrapper {
+      padding-bottom: 37px;
+    }
+  }
+
+  $cardWidth: 685px;
+$imgWidth: 390px;
+
+.card {
+  width: $cardWidth;
+  height: 350px;
+  position: relative;
+  margin: 0 15px;
+  border-radius: 5px;
+  box-shadow: -14.444px 19.167px 30px 2px rgb(23 23 23 / 14%);
+  transition: all 300ms;
+  display: flex;
+  overflow: hidden;
+}
+
+.img {
+  position: relative;
+  width: $imgWidth;
+  height: 100%;
+  display: block !important;
+  img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.content {
+  box-sizing: border-box;
+  width: $cardWidth - $imgWidth;
+  padding: 80px 40px;
+  position: relative;
+}
+
+.additionalInfo {
+  font-family: "Proxima Nova Regular", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #cbcbcb;
+}
+
+.title {
+
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: -13px;
+    width: 22px;
+    height: 7px;
+    background-color: #9aff28;
+    border-radius: 6px;}
+
+  
+
+  span {
+    display: block;
+    text-transform: none;
+    margin-top: 2px;
+    font-size: 28px;
+    line-height: 1;
+    font-family: 'Proxima Nova Black', sans-serif;
+  }
+  &:hover {
+    &:before {
+      content: "";
+      position: absolute;
+      top: -13px;
+      width: 100%;
+      height: 7px;
+      
+      transition: all ease-in-out 1000ms;
+      border-radius: 6px;
+    }
+  }
+}
+
+.text {
+  font-size: 15px;
+  text-align: justify;
+}
+
+.link {
+  position: absolute;
+  color: #b9b9b9;
+  bottom: 60px;
+  left: $imgWidth + 40px;
+
+  span {
+    font-size: 20px;
+  }
+}
+
+
+@media screen and (max-width: 770px) {
+  .wrapper {
+    padding-bottom: 100px;
+  }
+  .card {
+    width: 65vw;
+    height: calc(65vw * 1.4);
+    position: relative;
+    margin: 0 0 0 20px;
+    display: block;
+    box-shadow: -14.444px 19.167px 27px 0px rgba(23, 23, 23, 0.14);
+  }
+
+  .additionalInfo {
+    margin-bottom: 5px;
+  }
+
+  .img {
+    height: 50%;
+    width: 100%;
+    img {
+      height: 100%;
+    }
+  }
+
+  .content {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .title {
+    font-size: 11px;
+    margin-bottom: 10px;
+
+    span {
+      font-size: 20px;
+    }
+  }
+
+  .link {
+    bottom: 20px;
+    left: 20px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .text {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 345px) {
+  .img {
+    height: 43%;
+  }
+  .card {
+    height: calc(65vw * 1.5);
+  }
+}

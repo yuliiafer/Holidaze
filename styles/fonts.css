@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'Proxima Nova Black';
+    src: url('fonts/proxima-nova-black.ttf');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Proxima Nova Regular';
+    src: url('fonts/proxima-nova-regular.ttf');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Proxima Nova Light';
+    src: url('fonts/proxima-nova-light.ttf');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Proxima Nova Semibold';
+    src: url('fonts/proxima-nova-semibold.ttf');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Helvetica Neue Roman';
+    src: url('fonts/HELVETICANEUECYR-ROMAN.OTF');
+    font-display: swap;
+}

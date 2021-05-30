@@ -1,0 +1,171 @@
+.signup {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 500px;
+    max-width: 100%;
+    padding: 2rem;
+    border-radius: 1rem;
+    background: #242224;
+    color: #FFD194;
+    margin: 2rem;
+    transform-style: preserve-3d;
+    box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.05),
+        4px 4px 10px rgba(0, 0, 0, 0.5);
+
+    .group {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1rem;
+
+        .label {
+            text-align: center;
+            margin-right: 1rem;
+            margin-bottom: 1rem;
+            height: 2rem;
+            width: 2rem;
+            border-radius: 50%;
+            border: 1px solid transparent;
+            background: #242224;
+            box-shadow: inset 3px 3px 6px #151415,
+                inset -3px -3px 6px #333033;
+
+            i {
+                font-size: 10px;
+                margin-top: 0.6rem;
+                color: white;
+                text-shadow: 0 0 20px rgb(100, 138, 219),
+                    0 0 305px rgb(100, 138, 219);
+            }
+        }
+
+        textarea {
+            height: 5rem;
+        }
+    }
+}
+
+.pass,
+.input {
+    font-size: 17px;
+    letter-spacing: 1px;
+    background-color: #242224 !important;
+    border: none;
+    margin-bottom: 1rem;
+    outline: none;
+    align-items: center;
+    color: #FFD194;
+    position: relative;
+    width: 90%;
+}
+
+.input:-webkit-autofill,
+.input:-webkit-autofill:hover,
+.input:-webkit-autofill:focus,
+.input:-webkit-autofill:active {
+    -webkit-transition-delay: 9999s;
+    transition-delay: 9999s;
+}
+
+.input {
+    width: 90%;
+    height: 3rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    transition: all 0.4s easy;
+    background: #252525;
+    border: 1px solid transparent;
+    box-shadow: -3px -3px 5px rgba(255, 255, 255, 0.05),
+        3px 3px 5px rgba(0, 0, 0, 0.5),
+        inset -3px -3px 5px rgba(255, 255, 255, 0.05),
+        inset 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.checkgroup {
+    padding: 1rem 0;
+    font-size: 17px;
+    letter-spacing: 1px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+
+    input {
+        appearance: none;
+    }
+
+    label {
+        width: 90%;
+    }
+
+    .label {
+        position: relative;
+        margin-right: 2rem;
+        height: 2rem;
+        width: 2rem;
+        border-radius: 50%;
+        border: 1px solid transparent;
+        box-shadow: -2px -2px 3px rgba(255, 255, 255, 0.05),
+            2px 2px 3px rgba(0, 0, 0, 0.5),
+            -2px -2px 3px rgba(255, 255, 255, 0.05),
+            2px 2px 3px rgba(0, 0, 0, 0.5);
+
+        img {
+            position: absolute;
+            padding-right: 0.7rem;
+            padding-top: 0.5rem;
+        }
+    }
+}
+
+.signupButton {
+    width: 70%;
+    height: 3rem;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    color: #FAE2CC;
+    background: #252525;
+    margin: 20px auto;
+    box-shadow: -3px -3px 5px rgba(255, 255, 255, 0.05),
+        3px 3px 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    font-size: 16px;
+    border: 1px solid #252525;
+    transition: all 0.3s;
+    transition-delay: 0.1s;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        transform: translate(-110%) rotate(45deg);
+        transition: all 1.2s cubic-bezier(0.15, 1, 0.19, 1);
+        background: white;
+        background: linear-gradient(90deg, rgba(55, 23, 12, 1) 2%, rgba(131, 87, 65, 0.8939950980392157) 11%, rgba(70, 40, 27, 0.9332107843137255) 20%, rgba(117, 89, 73, 1) 30%, rgba(250, 226, 204, 0.87718837535014) 50%, rgba(86, 70, 63, 0.9136029411764706) 65%, rgba(21, 8, 6, 0.639093137254902) 79%, rgba(114, 79, 60, 0.938813025210084) 90%, rgba(2, 1, 0, 0.8155637254901961) 99%);
+    }
+
+    &:disabled {
+        opacity: 1;
+        background: transparent;
+        box-shadow:
+            inset -3px -3px 5px rgba(255, 255, 255, 0.05),
+            inset 3px 3px 5px rgba(0, 0, 0, 0.5);
+        color: #8a7868;
+        cursor: not-allowed;
+    }
+
+    &:active {
+        box-shadow: inset -3px -3px 5px rgba(255, 255, 255, 0.05),
+            inset 3px 3px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    &:hover::before {
+        background-color: #fff;
+        transform: translate(115%, -50px) rotate(90deg);
+    }
+}

@@ -1,0 +1,153 @@
+.wrapper {
+    max-width: 1580px;
+    width: 100%;
+    padding-bottom: 113px;
+    overflow: hidden;
+    margin: 0 auto;
+  
+    :global(.slick-next:before, .slick-prev:before) {
+      color: #000;
+    }
+  
+    :global(.slick-list) {
+      transition: all 0.3s;
+      overflow: visible;
+    }
+  
+    :global(.slick-dots) {
+      bottom: -32px;
+    }
+    :global(.slick-dots li) {
+      margin: 0
+    }
+  
+    :global(.slick-slide img) {
+      width: 100%;
+      margin: 0 40px 0 0;
+    }
+  
+    :global(.slick-track) {
+      margin: 0 auto;
+    }
+  }
+  
+  @media screen and (max-width: 480px){
+    .wrapper {
+      padding-bottom: 37px;
+    }
+  }
+
+  .card {
+    width: calc(325px * 0.88);
+    height: calc(485px * 0.88);
+    position: relative;
+    margin: 0 15px;
+    border-radius: 5px;
+    box-shadow: -14.444px 19.167px 27px 0px rgba(23, 23, 23, 0.14);
+    transition: all 300ms;
+  }
+  
+  @media (min-width: 480px) {
+    .card.active {
+      transform: scale(1.08);
+    }
+  }
+  
+  .card .img {
+    border-radius: 5px;
+    object-fit: cover;
+    height: 100%;
+    overflow: hidden;
+  
+    img {
+      height: 100%;
+    }
+  }
+  
+  .content {
+    position: absolute;
+    bottom: 20px;
+    left: 25px;
+    font-size: 14px;
+    color: #fff;
+    transform-origin: 0 100% 0;
+    width: calc(100% - 50px);
+  }
+  
+  .content * {
+    font-family: "Proxima Nova Regular", sans-serif;
+  }
+  
+  .desc {
+    font-family: "Proxima Nova Semibold", sans-serif;
+    white-space: nowrap;
+    line-height: 1;
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  
+  @media screen and (max-width: 480px) {
+    .card {
+      width: 65vw;
+      height: calc(65vw * 1.4);
+      position: relative;
+      margin: 0 0 0 20px;
+      box-shadow: -14.444px 19.167px 27px 0px rgba(23, 23, 23, 0.14);
+    }
+  
+    .content {
+      transform: scale(0.9);
+      width: 125%;
+    }
+  
+  }
+  
+  @media screen and (max-width: 425px) {
+    .content {
+      transform: scale(0.8);
+    }
+  }
+  
+  @media screen and (max-width: 375px) {
+    .content {
+      transform: scale(0.7);
+    }
+  }
+  
+  @media screen and (max-width: 320px) {
+    .content {
+      transform: scale(0.6);
+    }
+  }
+  
+  .roomSubtitle {
+    font-family: "Proxima Nova Semibold", sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  
+  .roomTitle {
+    font-family: "Proxima Nova Black", sans-serif;
+    font-size: 33px;
+    margin: 4px 0 8px 0;
+    line-height: .8;
+  }
+  
+  .imgContainer {
+    text-transform: none;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    font-family: "Proxima Nova Regular", sans-serif;
+    font-size: 14px;
+    align-items: center;
+  
+    &:first-of-type {
+      margin-right: 23px !important;
+    }
+  
+    img {
+      margin-right: 10px !important;
+      width: 30px !important;
+    }
+  }

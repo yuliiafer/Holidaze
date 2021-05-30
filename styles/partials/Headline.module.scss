@@ -1,0 +1,29 @@
+h2.headline {
+    text-align: center;
+    font-size: 34px;
+    font-family: "Proxima Nova Black", sans-serif;
+    margin: 0 auto;
+    margin-bottom: 70px;
+    max-width: 95%;
+}
+
+@media screen and (max-width: 768px) {
+    h2.headline {
+        font-size: 32px;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    h2.headline {
+        margin-bottom: 30px;
+        font-size: 29px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    h2.headline {
+        margin-bottom: 23px;
+        font-size: 26px;
+    }
+}

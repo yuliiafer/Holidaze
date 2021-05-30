@@ -1,0 +1,27 @@
+.backgroundImages {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-800px);
+  bottom: 30px;
+  width: 200px;
+  height: 200px;
+  .glasses {
+    width: 400px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    img {
+      width: 100%;
+    }
+  }
+  .berry {
+    width: 130px;
+    position: absolute;
+    left: 50px;
+    bottom: -200px;
+    img {
+      width: 100%;
+    }
+  }
+}
+

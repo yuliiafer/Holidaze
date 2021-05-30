@@ -1,0 +1,88 @@
+.wrapper {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+
+    :global(.slick-dots) {
+        bottom: 2px;
+
+        :global(li) {
+            margin: 0;
+        }
+    }
+
+    .container {
+        position: relative;
+        box-sizing: border-box;
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        overflow: visible;
+        padding-top: 75px;
+
+        .sliderWrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+
+            :global(.slick-dots) {
+                bottom: -35px;
+            }
+
+            .sliderItemWrapper {
+                box-sizing: border-box;
+                display: flex !important;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 250px !important;
+                height: 300px;
+                margin: 40px 20px;
+                padding: 0 2rem;
+                background: linear-gradient(45deg, #ffffff, #e6e6e6);
+                box-shadow: 8px -8px 26px #d6d6d6,
+                    -8px 8px 26px #ffffff;
+                border-radius: 6px;
+
+                @media (max-width: 1100px) {
+                    margin-left: 20px !important;
+                    width: 180px !important;
+                    padding: 0 1rem;
+                    height: 250px;
+                }
+
+                @media (max-width: 600px) {
+                    width: 150px !important;
+                    margin-left: 20px !important;
+                }
+
+                img {
+                    object-fit: contain;
+                    width: 62px;
+                    height: 62px;
+                    margin-bottom: 15px;
+                }
+
+                h5 {
+                    font-family: "Proxima Nova Black", sans-serif;
+                    font-size: 20px;
+                    margin: 7px 0;
+                    text-align: center;
+                }
+
+                p {
+                    font-family: "Proxima Nova Regular", sans-serif;
+                    line-height: 1.2;
+                    text-align: center;
+                }
+
+                @media (max-width: 600px) {
+                    margin: 40px auto 0;
+                }
+            }
+        }
+
+        @media (max-width: 600px) {
+            padding: 0 0 20px;
+        }
+    }
+}

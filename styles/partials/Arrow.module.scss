@@ -1,0 +1,24 @@
+.nextArrow,
+.prevArrow {
+    position: absolute;
+    display: block;
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+    background: linear-gradient(225deg, #ffffff, #e6e6e6);
+    box-shadow: -4px 4px 8px #e3e3e3,
+        4px -4px 8px #ffffff;
+    cursor: pointer;
+    background: center no-repeat;
+    transition: all 300ms;
+    color: #5daf00;
+}
+
+.nextArrow:hover,
+.prevArrow:hover {
+    background: #ffffff;
+    box-shadow: inset 6px -6px 12px #ededed,
+        inset -6px 6px 12px #ffffff;
+        color: #9aff28;
+}
