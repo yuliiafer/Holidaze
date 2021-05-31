@@ -7,7 +7,6 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 import Loader from "components/shared/Loader";
 import Header from "components/shared/Header/Header";
 import Footer from "components/shared/Footer/Footer";
-import { DATA } from "utils/constants";
 import NextNprogress from "nextjs-progressbar";
 import Head from "components/layout/Head";
 
