@@ -94,7 +94,6 @@ const Header = () => {
               <CustomLink title={"Hotels"} href={"/hotels"} />
               <CustomLink title={"Rooms"} href={"/rooms"} />
               <CustomLink title={"About Us"} href={"/about-us"} />
-              <CustomLink title={"Contact"} href={"/contacts"} />
             </div>
             <div className={styles.logo}>
               <Link href={"/"}>
