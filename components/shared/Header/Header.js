@@ -124,12 +124,13 @@ const Header = () => {
         <PopupContactForm
           popupOpen={popupOpened}
           setPopupOpen={setPopupOpened}
-          popupTitleText={"Plese write your information"}
-          submitBtnText="Wait for call"
+          popupTitleText={"Plese write your message"}
+          submitBtnText="SUBMIT"
           formName={`Contact form`}
           swalText={"We vill call you back"}
           withName
           withPhone
+          withMessage
         />
       </header>
     </>
