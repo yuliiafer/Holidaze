@@ -32,7 +32,6 @@ function MyApp({ Component, pageProps }) {
       <Header />
       <Component {...pageProps} />
       <Footer />
-      <div hidden id="snipcart" data-api-key={DATA}></div>
     </>
   );
 }
