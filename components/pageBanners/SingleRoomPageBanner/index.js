@@ -1,5 +1,5 @@
 import styles from "styles/partials/HeroImage.module.scss";
-import AnimatedMouseIcon from "shared/AnimatedMouseIcon/AnimatedMouseIcon";
+import AnimatedMouseIcon from "components/shared/AnimatedMouseIcon/AnimatedMouseIcon";
 import PropTypes from "prop-types";
 
 const RoomsAndPricesBanner = ({ bannerImg, title, subtitle }) => {
