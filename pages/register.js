@@ -1,4 +1,4 @@
-import styles from "styles/partials/Hotels.module.scss";
+import styles from "../styles/Home.module.scss";
 import Head from "../components/layout/Head";
 import RegisterForm from "../components/forms/RegisterForm";
 
