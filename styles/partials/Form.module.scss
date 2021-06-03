@@ -75,7 +75,7 @@ padding-bottom: 2rem;
     }
 }
 
-.pass,
+
 .input {
     font-size: 17px;
     letter-spacing: 1px;
@@ -97,7 +97,7 @@ padding-bottom: 2rem;
     transition-delay: 9999s;
 }
 
-.input, .input[type="text" i] {
+.input {
     width: 90%;
     height: 3rem;
     padding: 1rem;
@@ -110,9 +110,7 @@ padding-bottom: 2rem;
         inset -3px -3px 5px rgba(255, 255, 255, 0.199),
         inset 3px 3px 5px rgba(99, 99, 99, 0.5);
 }
-.input input[type="password" i] {
-    margin-bottom: 1rem;
-} 
+
 .checkgroup {
     padding: 1rem 0;
     font-size: 17px;

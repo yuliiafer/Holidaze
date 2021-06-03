@@ -13,7 +13,7 @@ const LoginForm = () => {
   const [loginError, setLoginError] = useState(null);
   const [success, setSuccess] = useState(null);
   const [password, setPassword] = useState("");
-  const [passVisible, setVisible] = useState(false);
+  //const [passVisible, setVisible] = useState(false);
   const router = useRouter();
   const handleLogin = async () => {
     setSubmitting(true);
@@ -53,9 +53,9 @@ const LoginForm = () => {
       setSubmitting(false);
     }
   };
-  const visible = () => {
-    setVisible(passVisible ? false : true);
-  };
+  //const visible = () => {
+  //  setVisible(passVisible ? false : true);
+  //};
 
   return (
     <Formik
@@ -93,21 +93,16 @@ const LoginForm = () => {
               <label className={styles.label} htmlFor="password">
                 <FaKey />
               </label>
-              <span className={styles.input}>
+  
                 <input
                   onChange={(e) => setPassword(e.target.value)}
                   value={password}
-                  type={passVisible ? "text" : "password"}
-                  className={styles.pass}
+                  type={"password"}
+                  className={styles.input}
                   name="password"
                   placeholder="Password *"
                   autoComplete="current-password"
                 />
-                <i
-                  onClick={visible}
-                  className={passVisible ? "pi pi-eye" : "pi pi-eye-slash"}
-                ></i>
-              </span>
               {errors.password && touched.password ? (
                 <div className="error">{errors.password}</div>
               ) : null}

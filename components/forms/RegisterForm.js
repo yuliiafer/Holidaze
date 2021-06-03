@@ -9,7 +9,7 @@ import { FaUserCircle, FaLock, FaUnlock } from 'react-icons/fa';
 import { IoMdMail } from "react-icons/io";
 
 const Register = () => {
-  const [passVisible, setVisible] = useState(false);
+  // const [passVisible, setVisible] = useState(false);
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -41,9 +41,9 @@ const Register = () => {
     });
     Router.push("/");
   };
-  const visible = () => {
-    setVisible(passVisible ? false : true);
-  };
+  //const visible = () => {
+  //  setVisible(passVisible ? false : true);
+  //};
 
   return (
     <>
@@ -102,21 +102,15 @@ const Register = () => {
                 <label className={styles.label} htmlFor="password">
                   <FaLock />
                 </label>
-                <span className={styles.input}>
                   <input
-                    type={passVisible ? "text" : "password"}
+                    type={"password"}
                     onChange={(e) => setPassword(e.target.value)}
                     value={password}
                     placeholder="Password *"
                     autoComplete="current-password"
-                    className={styles.pass}
+                    className={styles.input}
                     name="password"
                   />
-                  <i
-                    onClick={visible}
-                    className={passVisible ? "pi pi-eye" : "pi pi-eye-slash"}
-                  ></i>
-                </span>
                 {errors.password && touched.password ? (
                   <div className="error">{errors.password}</div>
                 ) : null}
@@ -126,20 +120,14 @@ const Register = () => {
                 <label className={styles.label} htmlFor="confirmed">
                   <FaUnlock />
                 </label>
-                <span className={styles.input}>
                   <input
-                    type={passVisible ? "text" : "password"}
+                    type={"password"}
                     onChange={(e) => setConfirmed(e.target.value)}
                     value={confirmed}
                     placeholder="Confirm Password *"
-                    className={styles.pass}
+                    className={styles.input}
                     name="confirmed"
                   />
-                  <i
-                    onClick={visible}
-                    className={passVisible ? "pi pi-eye" : "pi pi-eye-slash"}
-                  ></i>
-                </span>
                 {errors.confirmed && touched.confirmed ? (
                   <div className="error">{errors.confirmed}</div>
                 ) : null}
