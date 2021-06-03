@@ -1,0 +1,98 @@
+.main {
+    justify-content: center;
+    align-items: center;
+    padding: 0 4px;
+    display: flex;
+}
+
+.card {
+    transition: all .4s;
+    cursor: pointer;
+    position: relative;
+    margin: 1rem;
+    max-width: 1200px;
+
+    .details {
+        position: absolute;
+        bottom: 0px;
+        opacity: 0;
+        color: rgba(54, 54, 54);
+        font-size: 1.2rem;
+        z-index: 1;
+        transition: all .0s;
+        background: #0ed0f736;
+        width: 100%;
+        padding: 1rem;
+
+        .btn {
+            background: linear-gradient(to right, #0ed2f7, #b2effA);
+            font-size: 20px;
+            padding: 0.5rem 1rem;
+            margin: .5rem;
+            border-radius: 6px;
+            transition: all 0.4s easy;
+            -webkit-appearance: none;
+            border: 1px solid #0ed2f7;
+            box-shadow: -3px -3px 5px rgba(255, 255, 255, 0.192),
+                3px 3px 5px rgba(105, 105, 105, 0.5),
+                inset -3px -3px 5px rgba(255, 255, 255, 0.199),
+                inset 3px 3px 5px rgba(99, 99, 99, 0.5);
+            -webkit-box-shadow: -3px -3px 5px rgba(255, 255, 255, 0.192),
+                3px 3px 5px rgba(105, 105, 105, 0.5),
+                inset -3px -3px 5px rgba(255, 255, 255, 0.199),
+                inset 3px 3px 5px rgba(99, 99, 99, 0.5);
+            -moz-box-shadow: -3px -3px 5px rgba(255, 255, 255, 0.192),
+                3px 3px 5px rgba(105, 105, 105, 0.5),
+                inset -3px -3px 5px rgba(255, 255, 255, 0.199),
+                inset 3px 3px 5px rgba(99, 99, 99, 0.5);
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 94%;
+            height: 8px;
+            background: linear-gradient(to right, #0ed2f7, #b2effA);
+            bottom: 0;
+            z-index: -1;
+            opacity: .8;
+            transform: scaleX(0);
+            transition: all .4s;
+            transition-delay: .3s;
+            border-radius: 10px;
+            transform-origin: left;
+        }
+    }
+
+    img {
+        width: 350px;
+        box-shadow:
+            -3px -3px 5px rgba(255, 255, 255, 0.05),
+            3px 3px 5px rgba(0, 0, 0, 0.5);
+
+        &:hover {
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+        }
+    }
+
+    .name {
+        position: absolute;
+        top: 0px;
+        font-family: "Proxima Nova Black", sans-serif;
+        font-size: 30px;
+        color: #d4f8ff;
+        width: 100%;
+        background-color: #bef4ff3d;
+        padding: 0.5rem;
+    }
+
+    &:hover .details {
+        opacity: 1;
+        transition: all .4s;
+    }
+
+    &:hover .details::before {
+        transform: scaleX(1);
+    }
+}

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from "styles/Home.module.scss";
+import styles from "styles/partials/Hotels.module.scss";
 import { IoMdArrowDropright } from "react-icons/io";
 
 const HotelItem = ({ hotel }) => {

@@ -3,7 +3,7 @@ import axios from "axios";
 import { BASE_URL, HOTELS_PATH } from "utils/constants";
 import HotelItem from "components/hotels/HotelItem";
 import RoomsAndPricesBanner from "components/pageBanners/RoomsAndPricesBanner";
-import styles from "styles/Home.module.scss";
+import styles from "styles/partials/Hotels.module.scss";
 
 const Hotels = (props) => {
   return (
