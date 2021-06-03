@@ -49,10 +49,8 @@
       background: #f1f1f1;
       box-shadow: inset 9px -9px 25px #b2b2b2,
                   inset -9px 9px 25px #ffffff;
-                  filter:blur(.2px);
                   transform: scale(0.95);
                   &:hover {
-                    filter:blur(0);
                   transform: scale(1);
                   }
     }

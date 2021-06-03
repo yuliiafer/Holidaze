@@ -123,6 +123,9 @@
         height: 100%;
         border-radius: 5px;
         z-index: 1;
+        @media screen and (max-width: 600px) {
+           background-color: transparent;
+        }
     }
 
     .animatedMouse {
