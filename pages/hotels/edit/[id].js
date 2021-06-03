@@ -5,10 +5,9 @@ import { BASE_URL, HOTELS_PATH } from "utils/constants";
 import styles from "styles/Home.module.scss";
 import { FaImage } from "react-icons/fa";
 import Modal from "components/elements/Modal";
-import ImageUpload from "components/UploadImg";
-import { ToastContainer, toast } from 'react-toastify'
+import { toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
-import { parseCookies } from 'helpers/index'
+import ImageUpload from "components/ImageUpload";
 
 export default function EditHotel({ hotel , token }) {
   const [values, setValues] = useState({

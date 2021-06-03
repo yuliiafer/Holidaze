@@ -6,11 +6,8 @@ import { BASE_URL, HOTELS_PATH } from "utils/constants";
 import Link from "next/link";
 import { FaPen } from "react-icons/fa";
 import DescriptionRoomBlock from "components/shared/DescriptionRoomBlock";
-import RoomPhotosSlider from "components/sliders/RoomPhotosSlider";
-import OtherSlider from "components/sliders/OtherSlider";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import EventMap from "components/EventMap";
 import {
   MdLocationOn,
   MdClear,

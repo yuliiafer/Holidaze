@@ -1,20 +1,20 @@
 import dynamic from "next/dynamic";
 import LazyLoad from "react-lazyload";
-import Head from "components/layout/Head";
+import Head from "../components/layout/Head";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import { offersSlides, infrastructureSlides } from "data/home-page";
-import { gallerySlides } from "data/gallery-data";
-import { roomPreviewSlides } from "data/shared-rooms-data";
-import HomePageBanner from "components/pageBanners/HomePageBanner";
-import RoomsSlider from "components/sliders/RoomsSlider";
-import TextBlock from "components/TextBlock";
-import SliderTwo from "components/sliders/SliderTwo";
-import SliderOne from "components/sliders/SliderOne";
+import { offersSlides, infrastructureSlides } from "../data/home-page";
+import { gallerySlides } from "../data/gallery-data";
+import { roomPreviewSlides } from "../data/shared-rooms-data";
+import HomePageBanner from "../components/pageBanners/HomePageBanner";
+import RoomsSlider from "../components/sliders/RoomsSlider";
+import TextBlock from "../components/TextBlock";
+import SliderTwo from "../components/sliders/SliderTwo";
+import SliderOne from "../components/sliders/SliderOne";
 import { advantagesSlidesData } from "data/vacation";
-import styles from "styles/partials/ResortVacation.module.scss";
+import styles from "../styles/partials/ResortVacation.module.scss";
 import axios from "axios";
-import { BASE_URL, HOTEL_PATH } from "utils/constants";
-const GallerySlider = dynamic(() => import("components/sliders/GallerySlider"));
+import { BASE_URL, HOTELS_PATH } from "../utils/constants";
+const GallerySlider = dynamic(() => import("../components/sliders/GallerySlider"));
 console.log("My Application Version", BASE_URL);
 
 const Home = () => {
@@ -90,7 +90,7 @@ export async function getStaticProps() {
   let hotels = [];
 
   try {
-    const response = await axios.get(`${BASE_URL}${HOTEL_PATH}`);
+    const response = await axios.get(`${BASE_URL}${HOTELS_PATH}`);
     console.log(response.data);
     hotels = response.data;
   } catch (error) {

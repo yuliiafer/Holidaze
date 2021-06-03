@@ -1,4 +1,3 @@
-
 import dynamic from 'next/dynamic'
 import Head from "components/layout/Head";
 import {infrastructureSlides} from 'data/home-page'

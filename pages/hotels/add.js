@@ -1,12 +1,15 @@
-//import { parseCookies } from "helpers/index";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 import { useState } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import { BASE_URL, HOTELS_PATH } from "utils/constants";
 import styles from "styles/Home.module.scss";
 import PageBanner from "components/pageBanners/PageBanner";
+import cookie from 'cookie'
 
+export function parseCookies(req) {
+  return cookie.parse(req ? req.headers.cookie || '' : '')
+}
 const AddHotel = ({ token }) => {
   const [values, setValues] = useState({
     name: "",

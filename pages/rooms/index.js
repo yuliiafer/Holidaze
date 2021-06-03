@@ -1,4 +1,3 @@
-
 import Head from 'next/head'
 import {offersSlides} from 'data/home-page'
 import {roomPreviewSlides} from 'data/shared-rooms-data'

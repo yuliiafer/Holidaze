@@ -1,5 +1,4 @@
 import Head from "components/layout/Head";
-import HotelItem from "components/hotels/HotelItem";
 import { offersSlides } from "data/home-page";
 import PageBanner from "components/pageBanners/PageBanner";
 import TextBlock from "components/TextBlock";
@@ -9,7 +8,7 @@ import { servicesSlides } from "data/vacation";
 import ServicesSlider from "components/sliders/ServicesSlider";
 import SlidersThree from "components/sliders/SliderThree";
 
-const About = (props) => {
+const About = () => {
   return (
     <>
       <Head title="About Holidaze" />

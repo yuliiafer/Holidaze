@@ -5,7 +5,7 @@ import HotelItem from "components/hotels/HotelItem";
 import { BASE_URL, HOTELS_PATH } from "utils/constants";
 import Head from "components/layout/Head";
 import styles from "styles/Home.module.scss";
-import axios from "axios";
+
 const SearchPage = ({ hotels }) => {
   const router = useRouter();
 

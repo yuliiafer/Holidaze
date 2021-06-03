@@ -105,7 +105,7 @@ const Header = () => {
               </Link>
             </div>
             <div className={styles.rightBlock}>
-              <Link href={"/"}>
+              <Link href={"/login-page"}>
                 <a className={styles.button}>
                   <CgProfile />
                 </a>

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BASE_URL } from "@/utils/constants";
+import { BASE_URL } from "utils/constants";
 import styles from "styles/Home.module.scss";
 
 export default function ImageUpload({ hotelId, imageUploaded }) {

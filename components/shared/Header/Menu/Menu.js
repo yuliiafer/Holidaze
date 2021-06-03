@@ -1,7 +1,5 @@
 import styles from "styles/partials/Menu.module.scss";
 import Link from "next/link";
-import { CgProfile } from "react-icons/cg";
-import { FaUserAltSlash } from "react-icons/fa";
 
 const Menu = ({ menuOpened, toggleMenu }) => {
   return (
@@ -42,7 +40,13 @@ const Menu = ({ menuOpened, toggleMenu }) => {
             </Link>
           </div>
         </div>
-
+        <div className={styles.col}>
+          <div className={styles.menuItem} onClick={toggleMenu}>
+            <Link href={"/login-page"}>
+              <a>Login</a>
+            </Link>
+          </div>
+        </div>
         <div className={`${styles.col}`}>
           <div className={styles.location}>
             <i className="pi pi-map-marker"></i>
