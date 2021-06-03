@@ -7,6 +7,7 @@ const HomePageBanner = () => {
     <div className={styles.wrapper}>
       <div className={styles.container}>
         <div className={styles.textBlock}>
+          <p className={styles.text}>Hotel booking agency</p>
           <div className={styles.stars}>
             <MdStar color='#F0FF00' />
             <MdStar color='#F0FF00' size='1.1em'/>
@@ -14,8 +15,6 @@ const HomePageBanner = () => {
             <MdStar color='#F0FF00'size='1.1em' />
             <MdStar color='#F0FF00'/>
           </div>
-
-          <p className={styles.text}>Hotel booking agency</p>
           <h1 className={styles.title}>Holidaze</h1>
           <h3 className={styles.subtitle}>Bergen, Norway</h3>
         </div>

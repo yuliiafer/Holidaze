@@ -14,12 +14,11 @@ const Hotels = (props) => {
 
         {props.length === 0 && <h3>No hotels to show</h3>}
         {props.hotels.map((hotel) => (
-       <div className={styles.main}>
-          <div className={styles.grid}>
+          <div className={styles.main}>
             <div className={styles.card} key={hotel.id}>
               <HotelItem key={hotel.slug} hotel={hotel} />
             </div>
-          </div></div>
+          </div>
         ))}
       </main>
     </>

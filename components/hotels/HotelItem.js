@@ -1,4 +1,6 @@
 import Link from "next/link";
+import styles from "styles/Home.module.scss";
+import { IoMdArrowDropright } from "react-icons/io";
 
 const HotelItem = ({ hotel }) => {
   return (
@@ -9,15 +11,16 @@ const HotelItem = ({ hotel }) => {
       />
       <h2>
         <Link href={`/hotels/${hotel.slug}`}>
-          <a>{hotel.name}</a>
+          <a className={styles.name}>{hotel.name}</a>
         </Link>
       </h2>
-      <p className="card-text">
-        <b>kr {hotel.price}</b> / night
-      </p>
-      <Link href={`/hotels/${hotel.slug}`}>
-        <button className="btn">View Details</button>
-      </Link>
+      <div className={styles.details}>
+        <Link href={`/hotels/${hotel.slug}`}>
+          <button className={styles.btn}>
+            Details <IoMdArrowDropright />
+          </button>
+        </Link>
+      </div>
     </>
   );
 };

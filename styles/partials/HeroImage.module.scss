@@ -56,6 +56,7 @@
             .text {
                 font-size: 30px;
                 font-family: "Proxima Nova Semibold", sans-serif;
+                padding-bottom: 1rem;
             }
 
             .title {
@@ -63,7 +64,7 @@
                 font-family: "Proxima Nova Black", sans-serif;
                 text-transform: uppercase;
                 line-height: 1;
-                padding: 2rem 0;
+                padding: 1rem 0 2rem 0;
                 background: linear-gradient(174.06deg, rgba(55, 23, 12, 0.98) 3.93%, #835741 14.83%, #46281B 22.55%, #755949 34.81%, #FAE2CC 47.07%, #56463F 57.97%, #150806 71.59%, #724F3C 80.67%, #020100 87.03%);
                 background-size: 100%;
                 background-repeat: repeat;
@@ -84,12 +85,21 @@
                 font-family: "Proxima Nova Regular", sans-serif;
             }
 
-            @media screen and (max-width: 550px) {
-                align-items: flex-start;
-
+            @media screen and (max-width: 950px) {
+                
                 .text,
                 .subtitle {
                     font-size: 24px;
+                }
+            }
+            @media screen and (max-width: 450px) {
+                
+                .text,
+                .subtitle {
+                    font-size: 20px;
+                }
+                .title {
+                    font-size: 3rem;
                 }
             }
         }
