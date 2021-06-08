@@ -51,7 +51,7 @@ const ServicesSlider = ({ slides }) => {
   return (
     <div id="places" className={styles.wrapper}>
       <div className={styles.container}>
-        <HeadlineCenter title="Sevices" style={{ marginBottom: 0 }} />
+        <HeadlineCenter title="Services" style={{ marginBottom: 0 }} />
         <div className={styles.sliderWrapper}>
           <Slider {...settings} slidesToShow={4}>
             {slides.map((item, index) => {
