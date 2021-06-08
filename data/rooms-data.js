@@ -1,6 +1,6 @@
 export const roomsData = {
     'standard': {
-        title: 'Standart Room',
+        title: 'Standard Room',
         subtitle: '',
         features: [
             {img: '/images/rooms/area.svg', text: 'Area<br>23м&sup2;'},
