@@ -44,7 +44,7 @@ export const servicesSlides = [
     },
     {
         img: '/images/vacation/spaghetti-black.svg',
-        text: `Amasing Breakfast`,
+        text: `Amazing Breakfast`,
         link: '#'
     },
     {
