@@ -15,7 +15,7 @@ const RoomsPage = () => {
                 <RoomsAndPricesBanner/>
                 <section className='section'>
                     <TextBlock title={'Family Rooms'}
-                               subtitle={'Wellcome to'}
+                               subtitle={'Welcome to'}
                                img={'images/hotel195.jpg'}
                                content={'<p class="text">Consectetur adipiscing elit pellentesque habitant morbi tristique senectus. Et tortor at risus viverra. Nunc mi ipsum faucibus vitae aliquet. A diam maecenas sed enim ut. Nisl nisi scelerisque eu ultrices vitae auctor. Fermentum iaculis eu non diam phasellus vestibulum lorem sed. Arcu dui vivamus arcu felis bibendum ut tristique. Lectus arcu bibendum at varius vel pharetra vel turpis nunc. Tellus in hac habitasse platea. Ac odio tempor orci dapibus ultrices in iaculis nunc sed. Tincidunt arcu non sodales neque sodales ut etiam sit amet. Quis hendrerit dolor magna eget est lorem ipsum dolor sit.</p>'}/>
                 </section>
