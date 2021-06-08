@@ -49,7 +49,7 @@ export const servicesSlides = [
     },
     {
         img: '/images/vacation/swimming-pool-black.svg',
-        text: `Pul and Gym`,
+        text: `Pool and Gym`,
         link: '#'
     },
     {
